@@ -4,6 +4,7 @@
 from datetime import date as d
 import time
 from time import time
+from validator import validate_email
 
 #PIP module
 from camelcase import CamelCase
@@ -13,6 +14,13 @@ today = d.today()
 timestamp = time()
 
 c = CamelCase()
-print(c.hump('hello there world'))
+# print(c.hump('hello there world'))
 
-print(timestamp)
+email = 'test@test.com'
+
+if validate_email(email):
+    print('Email is valid')
+else:
+    print('Email is bad')
+
+# print(timestamp)
