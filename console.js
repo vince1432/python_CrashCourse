@@ -8,3 +8,5 @@ console.log("ef") //4th
 function main() {
   return null;
 }
+main()
+console.log(main)
